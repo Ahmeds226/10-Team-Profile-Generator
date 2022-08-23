@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Ahmeds226/10-Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/Ahmeds226/10-Team-Profile-Generator#readme"
+  "homepage": "https://github.com/Ahmeds226/10-Team-Profile-Generator#readme",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
 }
