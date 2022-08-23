@@ -1,0 +1,22 @@
+{
+  "name": "10-team-profile-generator",
+  "version": "1.0.0",
+  "description": "Team profile generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmeds226/10-Team-Profile-Generator.git"
+  },
+  "author": "Ahmed Shahnawaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmeds226/10-Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Ahmeds226/10-Team-Profile-Generator#readme"
+}
