@@ -1,4 +1,11 @@
+// Calling employee parent class
 const Employee = require("../lib/Employee");
+
+// Test
+// Test ID's:
+// Name: Ahmed
+// GitHub: AhmedShahnawazTest
+// Email: testahmeds@icloud.com
 
 test("Can create an new employee", () => {
   const employeeInstance = new Employee();

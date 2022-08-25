@@ -1,4 +1,11 @@
+// Calling engineer parent class
 const Engineer = require("../lib/Engineer");
+
+// Test
+// Test ID's:
+// Name: Ahmed
+// GitHub: AhmedShahnawazTest
+// Email: testahmeds@icloud.com
 
 test("Can create a github.", () => {
   const testGithub = "AhmedShahnawazTest";
