@@ -1,4 +1,4 @@
-// Calling employee parent class
+// Calling Employee parent class
 const Employee = require("../lib/Employee");
 
 // Test ID's:
@@ -48,7 +48,7 @@ test("Test to get the employee email through getEmail method", () => {
   expect(employeeInstance.getEmail()).toBe(testEmail);
 });
 
-test("Test to get the employee role", () => {
+test("Testing the Employee's role", () => {
   const returnValue = "Employee";
   const employeeInstance = new Employee("Ahmed", 2, "testahmeds@icloud.com");
   expect(employeeInstance.getRole()).toBe(returnValue);

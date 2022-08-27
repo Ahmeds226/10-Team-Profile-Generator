@@ -1,4 +1,4 @@
-// Calling engineer parent class
+// Calling Engineer parent class
 const Engineer = require("../lib/Engineer");
 
 // Test ID's:
@@ -29,7 +29,7 @@ test("Testing getGitHub's response to get GitHub", () => {
   expect(employeeInstance.getGitHub()).toBe(testGitHub);
 });
 
-test("Testing the role", () => {
+test("Testing the Engineer's role", () => {
   const returnValue = "Engineer";
   const employeeInstance = new Engineer(
     "Ahmed",
