@@ -39,7 +39,7 @@ test("Test to get the employees name through getName method", () => {
 test("Test to get the employee ID through getID method", () => {
   const testID = 2;
   const employeeInstance = new Employee("Ahmed", testID);
-  expect(employeeInstance.getID()).toBe(testID);
+  expect(employeeInstance.getId()).toBe(testID);
 });
 
 test("Test to get the employee email through getEmail method", () => {
