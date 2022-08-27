@@ -1,35 +1,35 @@
 // Calling engineer parent class
 const Engineer = require("../lib/Engineer");
 
-// Test
 // Test ID's:
 // Name: Ahmed
 // GitHub: AhmedShahnawazTest
 // Email: testahmeds@icloud.com
 
-test("Can create a github.", () => {
-  const testGithub = "AhmedShahnawazTest";
+// Tests:
+test("Test to create a GitHub", () => {
+  const testGitHub = "AhmedShahnawazTest";
   const employeeInstance = new Engineer(
     "Ahmed",
     2,
     "testahmeds@icloud.com",
-    testGithub
+    testGitHub
   );
-  expect(employeeInstance.github).toBe(testGithub);
+  expect(employeeInstance.GitHub).toBe(testGitHub);
 });
 
-test("Testing getGithub will return github.", () => {
-  const testGithub = "AhmedShahnawazTest";
+test("Testing getGitHub's response to get GitHub", () => {
+  const testGitHub = "AhmedShahnawazTest";
   const employeeInstance = new Engineer(
     "Ahmed",
     2,
     "testahmeds@icloud.com",
-    testGithub
+    testGitHub
   );
-  expect(employeeInstance.getGithub()).toBe(testGithub);
+  expect(employeeInstance.getGitHub()).toBe(testGitHub);
 });
 
-test("Testing role.", () => {
+test("Testing the role", () => {
   const returnValue = "Engineer";
   const employeeInstance = new Engineer(
     "Ahmed",
