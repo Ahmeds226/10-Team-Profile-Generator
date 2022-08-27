@@ -9,6 +9,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 teamArray = [];
 
+// Add validation later to the questions similar to the readme generator
 function runApp() {
   // Add Manager Function
   function addManager() {
