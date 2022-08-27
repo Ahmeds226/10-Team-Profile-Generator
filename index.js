@@ -6,11 +6,45 @@ const path = require("path");
 const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
+const generateTeam = require("./src/template");
 
 teamArray = [];
-
-// Add validation later to the questions similar to the readme generator
+// Functions:
+// Add validation later to the questions similar to the readme generator!!!!!
 function runApp() {
+  // Start prompting the questions
+  function createTeam() {
+    inquirer
+      .prompt([
+        {
+          type: "list",
+          message: "Please select what type of Employee you would like to add",
+          name: "addEmployeePrompt",
+          choices: [
+            "Manager",
+            "Engineer",
+            "Intern",
+            "No more team members are needed.",
+          ],
+        },
+      ])
+      .then(function (userInput) {
+        switch (userInput.addEmployeePrompt) {
+          case "Manager":
+            addManager();
+            break;
+          case "Engineer":
+            addEngineer();
+            break;
+          case "Intern":
+            addIntern();
+            break;
+
+          default:
+            htmlBuilder();
+        }
+      });
+  }
   // Add Manager Function
   function addManager() {
     inquirer
@@ -130,7 +164,12 @@ function runApp() {
   }
 
   // Create team function
-  function createTeam() {
+  function htmlBuilder() {
     console.log("Team successfully created!");
+    fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8");
   }
+
+  createTeam();
 }
+
+runApp();
