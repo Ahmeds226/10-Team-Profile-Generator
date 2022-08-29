@@ -3,8 +3,8 @@ const Employee = require("../lib/Employee");
 
 // Test ID's:
 // Name: Ahmed
-// GitHub: AhmedShahnawazTest
-// Email: testahmeds@icloud.com
+// GitHub: Ahmeds226
+// Email: iahmed.s226@gmail.com
 
 // Tests:
 test("Test to create a new employee", () => {
@@ -25,7 +25,7 @@ test("Testing the employee ID", () => {
 });
 
 test("Testing the employee email", () => {
-  const email = "testahmeds@icloud.com";
+  const email = "iahmed.s226@gmail.com";
   const employeeInstance = new Employee("Ahmed", 2, email);
   expect(employeeInstance.email).toBe(email);
 });
@@ -43,13 +43,13 @@ test("Test to get the employee ID through getID method", () => {
 });
 
 test("Test to get the employee email through getEmail method", () => {
-  const testEmail = "testahmeds@icloud.com";
+  const testEmail = "iahmed.s226@gmail.com";
   const employeeInstance = new Employee("Ahmed", 2, testEmail);
   expect(employeeInstance.getEmail()).toBe(testEmail);
 });
 
 test("Testing the Employee's role", () => {
   const returnValue = "Employee";
-  const employeeInstance = new Employee("Ahmed", 2, "testahmeds@icloud.com");
+  const employeeInstance = new Employee("Ahmed", 2, "iahmed.s226@gmail.com");
   expect(employeeInstance.getRole()).toBe(returnValue);
 });
