@@ -6,8 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "type": "commonjs",
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/Ahmeds226/10-Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.0",
+    "inquirer": "^8.2.4",
     "jest": "^28.1.3"
   }
 }
