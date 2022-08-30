@@ -52,4 +52,4 @@ npm run test
 
 ## Walkthrough Video
 
-<!-- Link HERE -->
+https://drive.google.com/file/d/1B1j0k3gs0ckhZ-l4w-qbnyjPM5k1DylD/view?usp=sharing
