@@ -48,7 +48,7 @@ npm run test
 
 ## Sample HTML File / Preview:
 
-<!-- Image HERE -->
+<img src="./assets/images/preview.png" alt="" />
 
 ## Walkthrough Video
 
